@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--reponsividade-->
+    <link rel="stylesheet" href="style/reponsive.css">
+
+    <!--own css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.css">
+
+    <title>Netflix Clone</title>
+
+    <!--Netflix icon-->
+    <link rel="icon" type="image/png" href="img/netflix-icon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id=logo>
+                <img alt= logo-netflix src="img/netflix-logo.png">
+            </div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Documentários</a>
+            </nav>
+            <div class="others-menu">
+                <div class="search-field">
+                    <i id=search class="fas fa-search" onclick="mostrarPesquisa()"></i>
+                    <input type="text" id="search-form" placeholder="Títulos, gente e gêneros" >
+                </div>
+                <a href="#">INFANTIL</a>
+                <i id=gift class="fas fa-gift"></i>
+                <i class="fas fa-bell"></i>                
+            </div> 
+        </div>
+        <main>
+            <div class="filme-principal">
+                <div class= "container">
+                    <h3 id="title">SUPERNATURAL</h3>
+                    <p id="descricao">Os irmãos Dean e Sam vasculham o país em busca de atividades paranormais, brigando com demônios, fantasmas e monstros no caminho.</p>
+                    <div class="botoes">
+                        <button class="botao" role="button">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button class="botao" role="button">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="carrosel-filmes">
+            <div class=texto-carrosel>
+                <h3 id="texto-main-carrosel">Em alta</h3>
+                <h4 id="texto-oculto-carrosel" onmouseover="irmensagem(this)" onmouseout="voltarmensagem(this)"> > </h4>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--javascripts-->
+    <script src=https://kit.fontawesome.com/4dfc898be0.js></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script type="text/javascript" src="js/owl/main.js"></script>
+</body>
+</html>

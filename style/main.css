@@ -1,0 +1,163 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: Arial, 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+
+}
+header .container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    margin-right: 700px;  
+    margin-left: 60px; 
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    flex-direction: row;
+}
+header div a:hover{
+    color:#fff;
+}
+.others-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20%;
+}
+header div div a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    font-size: 15px;
+}
+header #gift{
+    margin-right: 20px;
+}
+
+/*campo de busca*/
+.search-field{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;    
+}
+#search-form{
+    width: 200px;
+}
+
+header #logo img{
+    width: 100px;
+    height: 60px;
+}
+
+/*filme-principal*/
+main .filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/supernatural-capa.jpg');
+    height: 400px;
+    background-size: cover; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .filme-principal .container{
+    display:flow-root;
+    border: none;
+}
+
+main .filme-principal #descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+main .filme-principal #title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .4s ease all;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+    
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*Carousel-filmes*/
+
+.carrosel-filmes{
+    margin-top: 5px;
+
+}
+
+.carrosel-filmes .item .box-filme{
+    border-radius: 1%;
+}
+
+.texto-carrosel{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    
+}
+
+#texto-main-carrosel{
+    font-size: 20px;
+    transition: .5s none all;
+}
+
+#texto-oculto-carrosel{
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
